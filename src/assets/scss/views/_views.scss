@@ -1,0 +1,102 @@
+/* **************************** About **************************** */
+.about {
+  &__title {
+    b {
+      color: $primary-main;
+    }
+  }
+
+  &__datas {
+    @include flex-row-justify(center);
+    gap: 2rem;
+    margin-top: 3rem;
+
+    &__list {
+      display: block;
+      column-count: 2;
+
+      &__item {
+        margin: 0 3rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+
+        span {
+          &:nth-child(1) {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* *********************** Experience **************************** */
+.experiences {
+  &__timeline {
+  }
+
+  &__resume {
+    background: $primary-main;
+    padding: 0.3rem !important;
+
+
+    ul {
+      gap: 1rem;
+      padding: 5rem;
+      background-color: $default;
+
+      li {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 3rem;
+
+          i {
+            display: flex;
+            align-items: center;
+            font-size: 8rem;
+            background-color: transparent;
+            background-image: var(--hover-dark);
+            color: transparent !important;
+            -webkit-background-clip: text;
+          }
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        span {
+          font-size: 3rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+/* *********************** Skills **************************** */
+.skills {
+  &__range {
+    @include flex-row-justify(center);
+    font-size: 1.4rem;
+  }
+}
+
+
+/* *********************** Projects **************************** */
+.tools {
+  &__wrapper {
+    padding: 0.2rem;
+
+    &__items {
+      @include box()
+    }
+  }
+}

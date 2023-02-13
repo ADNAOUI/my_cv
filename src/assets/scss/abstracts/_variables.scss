@@ -1,0 +1,35 @@
+////Colors
+:root {
+  --primary-main: #47d16e;
+  --secondary-main: rgb(89, 235, 254, 1);
+  --hover-dark: linear-gradient(270deg, #47D16E 10.81%, #59EBFF 100%);
+  --default: #424242;
+}
+
+$primary: #47d16e;
+$secondary: #59ebfe;
+$default: #424242;
+$hover-dark : linear-gradient(270deg, #47D16E 10.81%, #59EBFF 100%);
+
+$font-01: "Cartograph CF",
+sans-serif;
+$font-02: "Alexana",
+sans-serif;
+$fontAwesomeFree: "Font Awesome 6 Free";
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1620px;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
