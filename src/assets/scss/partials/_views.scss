@@ -2,7 +2,7 @@
 .about {
   &__title {
     b {
-      color: $primary-main;
+      color: $primary;
     }
   }
 
@@ -37,7 +37,7 @@
   }
 
   &__resume {
-    background: $primary-main;
+    background: $primary;
     padding: 0.3rem !important;
 
 

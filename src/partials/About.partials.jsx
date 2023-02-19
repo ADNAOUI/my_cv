@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { ListGroup } from 'react-bootstrap';
-
 const user = {
     age: 25,
     address: "108 rue Théophile Lamy Bourges",
@@ -12,16 +9,15 @@ const user = {
 export const About = () => {
 
     const userDetails = Object.entries(user).map(([name, value], k) => (
-        <li key={k}>
-            <strong>{name}:</strong> {value}
+        <li key={k} className="about__list__item">
+            <strong className="text-capitalize ">{name}:</strong> {value}
         </li>
     ));
 
     return (
-        <section>
-            <ul>
-                {userDetails}
-            </ul>
+        <section className="about">
+            <h2>Hello World, <strong className="primary-color">Farid ADNAOUI</strong> développeur web full stack</h2>
+            <ul className="about__list">{userDetails}</ul>
         </section>
-    );
+    )
 };

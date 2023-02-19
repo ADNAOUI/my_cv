@@ -7,4 +7,9 @@
 @import './base/typography', './base/titles';
 
 // 3. Components
-@import './components/header', './components/navigation', './views/views', './layout/layout';
+@import './components/header', './components/navigation';
+
+// 4. Partials and Layout
+@import './partials/views',
+'./partials/about.partials',
+'./layout/layout';
