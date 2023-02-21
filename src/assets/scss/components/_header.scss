@@ -2,11 +2,11 @@
   position: sticky;
   top: 0;
   text-align: center;
-  background: rgba( 255, 255, 255, 0.25 );
+  background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 0px 8px 0px #47d16e;
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 1000;
 
   &__navigation {
@@ -24,7 +24,7 @@
 
     &__logo {
       span {
-        font-family: $font-02 ;
+        font-family: $font-02;
 
       }
     }
@@ -65,7 +65,6 @@
         overflow: hidden;
 
         li {
-          $numOfBlobs: 10;
           position: absolute;
           display: block;
           list-style: none;
@@ -75,20 +74,6 @@
           animation: animate 25s linear infinite;
           bottom: -150px;
 
-          @function randomNum($min, $max) {
-            $rand: random();
-            $randomNum: $min + floor($rand * (($max - $min) + 1));
-
-            @return $randomNum;
-          }
-
-          @for $i from 1 through $numOfBlobs {
-            &:nth-child(#{$i}) {
-              left: #{randomNum(10, 100)};
-              width: #{randomNum(10, 100)}px;
-              height: #{randomNum(10, 100)}px;
-            }
-          }
 
           &:nth-child(1) {
             left: 25%;
@@ -164,9 +149,6 @@
             animation-delay: 0s;
             animation-duration: 11s;
           }
-
-
-
         }
       }
 

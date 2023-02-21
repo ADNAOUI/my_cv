@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Container } from 'react-bootstrap';
 
 import { Header } from './components/header/Header';
-import { About } from './partials/About.partials';
+import { About, Experiences, Skills } from './partials';
 
 const Layout = () => {
   const [count, setCount] = useState(0)
@@ -13,9 +13,8 @@ const Layout = () => {
 
       <Container>
         <About />
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <Experiences />
+        <Skills />
       </Container>
     </>
   )

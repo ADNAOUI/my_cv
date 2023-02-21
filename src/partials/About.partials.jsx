@@ -6,7 +6,7 @@ const user = {
     phone: "07 71 62 54 25"
 }
 
-export const About = () => {
+const About = () => {
 
     const userDetails = Object.entries(user).map(([name, value], k) => (
         <li key={k} className="about__list__item">
@@ -21,3 +21,4 @@ export const About = () => {
         </section>
     )
 };
+export default About
