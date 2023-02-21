@@ -13,7 +13,7 @@ const Experiences = () => {
             {
               title: "May 1940",
               cardTitle: "Dunkirk",
-              url: "http://google.com",
+              url: "https://google.com",
               cardSubtitle:
                 "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
             },
